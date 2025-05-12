@@ -1,0 +1,26 @@
+# Ignorar archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Ignorar archivos de entorno virtual
+.env/
+venv/
+ENV/
+env/
+.venv/
+
+# Ignorar carpetas de construcción de paquetes
+build/
+dist/
+*.egg-info/
+
+# Ignorar archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar configuraciones personales de editores de texto
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
