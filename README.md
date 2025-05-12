@@ -36,15 +36,15 @@ Desde la raíz del proyecto donde está el `setup.py`.
 ## 🛠️ Ejemplo de uso básico
 
 ```python
-from algoritmos_geneticos_col.genetico import AlgoritmoGenetico
+from algoritmos_geneticos_DG_PV.genetico import AlgoritmoGenetico
 
 # Definir función de aptitud (fitness)
 def aptitud(individuo):
-    return sum(individuo)  # Ejemplo simple: maximizar n煤mero de 1s
+    return sum(individuo)  # Ejemplo simple: maximizar número de 1s
 
 # Inicializar el algoritmo
 algoritmo = AlgoritmoGenetico(
-    tama帽o_poblacion=20,
+    tamaño_poblacion=20,
     num_generaciones=50,
     funcion_fitness=aptitud,
     metodo_seleccion='torneo',
@@ -56,7 +56,7 @@ algoritmo = AlgoritmoGenetico(
 )
 
 # Inicializar población (genomas de 10 genes)
-algoritmo.inicializar_poblacion(tama帽o_genoma=10)
+algoritmo.inicializar_poblacion(tamaño_genoma=10)
 
 # Evolucionar
 algoritmo.evolucionar()
