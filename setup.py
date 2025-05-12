@@ -2,9 +2,7 @@
 
 from setuptools import setup, find_packages
 
-# Leer la versión del archivo VERSION
-with open("VERSION", "r") as f:
-    version = f.read().strip()
+version = "0.1.0"
 
 # Leer el contenido del README.md
 with open("README.md", "r", encoding="utf-8") as f:
@@ -25,7 +23,7 @@ setup(
         "Reportar errores": "https://github.com/oxgerrero/algoritmos_geneticos_DG_PV/issues",
     },
     classifiers=[
-        "Programming Language :: Python :: 3.11.8",
+        "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Natural Language :: Spanish",
