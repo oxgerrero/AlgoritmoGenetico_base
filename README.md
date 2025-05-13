@@ -21,7 +21,7 @@ Ideal para optimización, inteligencia artificial evolutiva, proyectos de invest
 Una vez esté publicada en PyPI:
 
 ```bash
-pip install algoritmos_geneticos_col
+pip install algoritmos_geneticos_DG_PV
 ```
 
 Por ahora, si deseas instalar localmente:
