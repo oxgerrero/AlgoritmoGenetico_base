@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>algoritmos_geneticos_DG_PV</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/styles/github.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.1/highlight.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-400 to-purple-500 text-white" data-aos="fade-in">
+    <h1 class="text-5xl font-bold mb-4">ALGORITMOS GENETICOS</h1>
+    <p class="text-xl mb-6 text-center">Librería modular para optimización evolutiva mediante algoritmos geneticos en español.</p>
+    <div class="flex space-x-4">
+        <a href="https://github.com/oxgerrero/AlgoritmoGenetico_base" class="bg-white text-blue-600 font-semibold py-2 px-6 rounded shadow hover:bg-gray-200">GitHub</a>
+        <a href="#laboratorio" class="bg-white text-purple-600 font-semibold py-2 px-6 rounded shadow hover:bg-gray-200">Laboratorio</a>
+    </div>
+</section>
+<!-- ¿Qué es? -->
+<section class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6 text-center">¿Qué es un Algoritmo Genético?</h2>
+    <p class="text-lg text-center text-gray-700">
+        Un algoritmo genético es un método de búsqueda y optimización inspirado en la evolución natural.
+        Utiliza mecanismos como la selección, el cruce y la mutación para evolucionar una población de soluciones
+        y encontrar la mejor posible en función de una función de aptitud.
+    </p>
+</section>
+<!-- ¿Qué es la libreria? -->
+<section class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6 text-center">¿Qué es algoritmos_geneticos_DG_PV?</h2>
+    <p class="text-lg text-center">Es una librería flexible que permite diseñar, ejecutar y personalizar algoritmos genéticos de forma profesional, en Español.</p>
+</section>
+
+<!-- Características -->
+<section class="bg-white py-16" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-6">
+        <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+            <a href="#Seleccion"><h3 class="text-2xl font-semibold mb-4">Selección</h3></a>
+            <p>Ruleta, Torneo, Aleatorio.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+            <a href="#Cruce"><h3 class="text-2xl font-semibold mb-4">Cruce</h3></a>
+            <p>Un punto, Dos puntos, Uniforme.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+            <a href="#Mutación"><h3 class="text-2xl font-semibold mb-4">Mutación</h3></a>
+            <p>Básica, Aleatoria.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded-lg shadow text-center">
+            <a href="#Reemplazo"><h3 class="text-2xl font-semibold mb-4">Reemplazo</h3></a>
+            <p>Generacional, Elitismo.</p>
+        </div>
+    </div>
+</section>
+<!-- Seleccion -->
+  <div id="Seleccion"></div>
+<section class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6 text-center">🎯 Selección</h2>
+    <p class="text-lg text-gray-700 mb-8 text-center">
+        La selección es el proceso donde se eligen los mejores individuos de la población
+        para reproducirse. Un buen método de selección mejora la calidad de las próximas generaciones.
+    </p>
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Ruleta</h3>
+            <p>La probabilidad de ser elegido es proporcional a la aptitud del individuo.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Torneo</h3>
+            <p>Se selecciona el mejor de un grupo aleatorio de individuos.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Aleatorio</h3>
+            <p>Los individuos son seleccionados completamente al azar, sin considerar su aptitud.</p>
+        </div>
+    </div>
+</section>
+<!-- Cruce -->
+  <div id="Cruce"></div>
+<section class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6 text-center">🔀 Cruce</h2>
+    <p class="text-lg text-gray-700 mb-8 text-center">
+        El cruce combina la información genética de dos padres para crear nuevos individuos (hijos).
+        Es un mecanismo clave para explorar nuevas soluciones en el espacio de búsqueda.
+    </p>
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Un Punto</h3>
+            <p>Se elige un punto de corte y se combinan los genes de los padres a partir de ahí.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Dos Puntos</h3>
+            <p>Se seleccionan dos puntos de corte, intercambiando el segmento intermedio entre los padres.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Uniforme</h3>
+            <p>Cada gen se intercambia aleatoriamente entre los padres con una probabilidad fija.</p>
+        </div>
+    </div>
+</section>
+<!-- Mutacion -->
+ <div id="Mutación"></div>
+ <section class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6 text-center">🧬 Mutación</h2>
+    <p class="text-lg text-gray-700 mb-8 text-center">
+        La mutación introduce cambios aleatorios en los individuos para mantener la diversidad genética
+        y evitar que la población caiga en óptimos locales.
+    </p>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Básica</h3>
+            <p>Invierte uno o varios genes de manera controlada con baja probabilidad.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Aleatoria</h3>
+            <p>Cambia un gen a un nuevo valor completamente aleatorio.</p>
+        </div>
+    </div>
+</section>
+<!-- Reemplazo -->
+ <div id="Reemplazo"></div>
+<section class="max-w-5xl mx-auto py-16 px-6" data-aos="fade-up">
+    <h2 class="text-4xl font-bold mb-6 text-center">♻️ Reemplazo</h2>
+    <p class="text-lg text-gray-700 mb-8 text-center">
+        El reemplazo define cómo se forma la nueva generación a partir de los padres y los hijos.
+        Afecta la velocidad de convergencia y la diversidad genética.
+    </p>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Generacional</h3>
+            <p>Todos los individuos padres son reemplazados completamente por nuevos hijos.</p>
+        </div>
+        <div class="p-6 bg-gray-100 rounded shadow text-center">
+            <h3 class="text-2xl font-semibold mb-2">Elitismo</h3>
+            <p>Se conservan los mejores padres y se complementan con nuevos hijos para formar la siguiente generación.</p>
+        </div>
+    </div>
+</section>
+<!-- Instalación y Uso -->
+<section class="max-w-5xl mx-auto py-16 px-6 bg-white" data-aos="fade-up">
+  <h2 class="text-4xl font-bold mb-6 text-center">🚀 Instalación y Primer Uso</h2>
+  <div class="text-lg text-gray-700 space-y-6">
+    <p>Para instalar la librería algoritmos_geneticos_DG_PV una vez publicada en PyPI:</p>
+
+    <div class="relative bg-gray-900 text-white font-mono rounded-lg overflow-x-auto p-4">
+      <button onclick="copiarCodigoC(this)" class="absolute top-2 right-2 bg-blue-600 text-sm px-3 py-1 rounded hover:bg-blue-700">Copiar</button>
+      <pre><code class="language-bash">pip install algoritmos_geneticos_DG_PV</code></pre>
+    </div>
+
+    <p>Mientras tanto, para instalar localmente:</p>
+
+    <div class="relative bg-gray-900 text-white font-mono rounded-lg overflow-x-auto p-4">
+      <button onclick="copiarCodigoC(this)" class="absolute top-2 right-2 bg-blue-600 text-sm px-3 py-1 rounded hover:bg-blue-700">Copiar</button>
+      <pre><code class="language-bash">pip install .</code></pre>
+    </div>
+
+    <p>Y para usarlo rápidamente en Python:</p>
+
+    <div class="relative bg-gray-900 text-white font-mono rounded-lg overflow-x-auto p-4">
+      <button onclick="copiarCodigoC(this)" class="absolute top-2 right-2 bg-blue-600 text-sm px-3 py-1 rounded hover:bg-blue-700">Copiar</button>
+      <pre><code class="language-python">
+from algoritmos_geneticos_DG_PV.genetico import AlgoritmoGenetico
+aptitud = lambda individuo: sum(individuo)
+algoritmo = AlgoritmoGenetico(
+    tamaño_poblacion=20,
+    num_generaciones=50,
+    funcion_fitness=aptitud,
+    metodo_seleccion='torneo',
+    metodo_cruce='un_punto',
+    metodo_mutacion='basica',
+    metodo_reemplazo='elitismo',
+    probabilidad_cruce=0.8,
+    probabilidad_mutacion=0.05
+)
+algoritmo.inicializar_poblacion(tamaño_genoma=10)
+algoritmo.evolucionar()
+mejor, puntuacion = algoritmo.obtener_mejor_individuo()
+print(f"Mejor individuo: {mejor}, Aptitud: {puntuacion}")
+      </code></pre>
+    </div>
+  </div>
+</section>
+
+<!-- Laboratorio -->
+ <div id="laboratorio"></div>
+<section class="min-h-screen flex flex-col justify-center items-center bg-gradient-to-r from-blue-400 to-purple-500 text-white" data-aos="fade-in">
+    <h1 class="text-5xl font-bold mb-4">Laboratorio de Algoritmos Genéticos</h1>
+    <p class="text-xl mb-6 text-center">Configura, genera y copia tu código en Python.</p>
+</section>
+<section class="max-w-5xl mx-auto py-8 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">Configuración</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+            <label>Selección:</label>
+            <select id="seleccion" class="w-full p-2 border rounded">
+                <option value="ruleta">Ruleta</option>
+                <option value="torneo">Torneo</option>
+                <option value="aleatorio">Aleatorio</option>
+            </select>
+        </div>
+        <div>
+            <label>Cruce:</label>
+            <select id="cruce" class="w-full p-2 border rounded">
+                <option value="un_punto">Un Punto</option>
+                <option value="dos_puntos">Dos Puntos</option>
+                <option value="uniforme">Uniforme</option>
+            </select>
+        </div>
+        <div>
+            <label>Mutación:</label>
+            <select id="mutacion" class="w-full p-2 border rounded">
+                <option value="basica">Básica</option>
+                <option value="aleatoria">Aleatoria</option>
+            </select>
+        </div>
+        <div>
+            <label>Reemplazo:</label>
+            <select id="reemplazo" class="w-full p-2 border rounded">
+                <option value="generacional">Generacional</option>
+                <option value="elitismo">Elitismo</option>
+            </select>
+        </div>
+        <div>
+            <label>Tamaño de población:</label>
+            <input id="poblacion" type="number" value="20" class="w-full p-2 border rounded">
+        </div>
+        <div>
+            <label>Número de generaciones:</label>
+            <input id="generaciones" type="number" value="50" class="w-full p-2 border rounded">
+        </div>
+        <div>
+            <label>Probabilidad de cruce:</label>
+            <input id="p_cruce" type="number" step="0.01" value="0.8" class="w-full p-2 border rounded">
+        </div>
+        <div>
+            <label>Probabilidad de mutación:</label>
+            <input id="p_mutacion" type="number" step="0.01" value="0.05" class="w-full p-2 border rounded">
+        </div>
+    </div>
+</section>
+<section class="max-w-5xl mx-auto py-8 px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">Función de Aptitud</h2>
+    <textarea id="aptitud" class="w-full p-3 border rounded h-32" placeholder="lambda individuo: sum(individuo)">lambda individuo: sum(individuo)</textarea>
+</section>
+<section class="max-w-5xl mx-auto py-8 px-6" data-aos="fade-up">
+    <button onclick="generarCodigo()" class="bg-blue-600 text-white px-6 py-3 rounded shadow hover:bg-blue-700">Generar Código</button>
+</section>
+<section class="max-w-5xl mx-auto py-8 px-6" data-aos="fade-up">
+    <pre><code id="codigo_generado" class="language-python"></code></pre>
+    <button onclick="copiarCodigo()" class="bg-green-600 text-white px-6 py-3 rounded shadow hover:bg-green-700 mt-4">Copiar Código</button>
+</section>
+<!-- Autores -->
+<section class="bg-gray-100 py-16" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-8">👨‍💻 Autores</h2>
+        <div class="flex justify-center space-x-12">
+            <div>
+                <h3 class="text-xl font-semibold">David Gomez</h3>
+                <a href="https://github.com/oxgerrero" class="text-blue-500 hover:underline">GitHub</a>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold">Paula Vera</h3>
+                <a href="https://github.com/paulav14" class="text-blue-500 hover:underline">GitHub</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="py-6 text-center text-gray-500 text-sm">
+    © 2025 algoritmos_geneticos_DG_PV — Licencia MIT
+</footer>
+<script src="script.js"></script>
+<script>
+    AOS.init();
+    hljs.highlightAll();
+</script>
+
+</body>
+</html>

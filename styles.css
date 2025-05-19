@@ -1,0 +1,12 @@
+/* Pequeños ajustes de estilo */
+body {
+    scroll-behavior: smooth;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    transition: background-color 0.3s ease;
+}
