@@ -70,7 +70,7 @@ print(f"Mejor individuo: {mejor}, Aptitud: {puntuacion}")
 
 ## 📋 Documentación
 
-- 📋 [Documentación completa](https://github.com/oxgerrero/algoritmos_geneticos_DG_PV/wiki) (en construcción).
+- 📋 [Documentación completa](https://oxgerrero.github.io/AlgoritmoGenetico_base/) (en construcción).
 - Código comentado directamente en cada módulo.
 - Compatible con generación de documentación automática (`Sphinx`, `MkDocs`).
 
